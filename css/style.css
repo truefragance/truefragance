@@ -259,14 +259,15 @@ button{ font-family: inherit; cursor:pointer; }
   .hero-sub{ font-size: .94rem; }
   .section-head{ margin-bottom: 1.8rem; padding-bottom: 1.1rem; }
   .section-head h2{ font-size: 1.5rem; }
-  .product-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; }
-  .product-body{ padding: .7rem .8rem .85rem; gap: .35rem; }
-  .product-name{ font-size: .92rem; }
-  .product-desc{ font-size: .74rem; }
-  .product-price{ font-size: .82rem; }
-  .product-cat{ font-size: .58rem; }
-  .pyramid-toggle{ font-size: .66rem; }
-  .add-btn{ padding: .4rem .7rem; font-size: .74rem; }
+  .product-grid{ grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem; }
+  .product-body{ padding: .5rem .55rem .65rem; gap: .25rem; }
+  .product-name{ font-size: .74rem; line-height: 1.15; }
+  .product-desc{ display: none; }
+  .product-price{ font-size: .72rem; }
+  .product-cat{ font-size: .52rem; }
+  .pyramid-toggle{ font-size: .6rem; }
+  .add-btn{ padding: .3rem .5rem; font-size: .66rem; width: 100%; }
+  .product-footer{ padding-top: .5rem; }
   .reveal{ transform: translateY(10px); transition: opacity .5s ease, transform .5s ease; }
   .product-card{ animation-duration: .35s; }
   .story h2, .contact h2{ font-size: 1.5rem; }
