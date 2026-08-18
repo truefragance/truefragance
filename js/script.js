@@ -290,7 +290,7 @@
   /* =========================================================
      Animaciones al hacer scroll
   ========================================================= */
-  const revealEls = document.querySelectorAll(".reveal");
+  const revealEls = document.querySelectorAll(".reveal, .reveal-stagger");
   if ("IntersectionObserver" in window && revealEls.length) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
