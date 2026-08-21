@@ -9,6 +9,9 @@
 
   const money = (n) => "RD$" + n.toLocaleString("es-DO");
 
+  // Los productos ya no están hardcodeados: se cargan desde content/products.json
+  let PRODUCTS = [];
+
   /* =========================================================
      Estado del carrito (persiste en localStorage)
   ========================================================= */
@@ -309,8 +312,18 @@
      Init
   ========================================================= */
   document.getElementById("year").textContent = new Date().getFullYear();
-  renderCategoryFilter();
-  renderGenderFilter();
-  renderProducts();
-  renderCart();
+  renderCart(); // muestra el carrito guardado de inmediato, sin esperar
+
+  fetch("content/products.json")
+    .then((res) => res.json())
+    .then((data) => {
+      PRODUCTS = data.products || [];
+      renderCategoryFilter();
+      renderGenderFilter();
+      renderProducts();
+    })
+    .catch((err) => {
+      console.error("No se pudo cargar el catálogo:", err);
+      grid.innerHTML = `<p class="no-results">No se pudo cargar el catálogo. Intenta recargar la página.</p>`;
+    });
 })();

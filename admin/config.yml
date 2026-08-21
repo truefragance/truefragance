@@ -1,0 +1,52 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Guarda las fotos que subas desde el panel en esta carpeta del sitio
+media_folder: "assets/productos"
+public_folder: "assets/productos"
+
+# Interfaz en español
+locale: "es"
+
+collections:
+  - name: "productos"
+    label: "Perfumes"
+    label_singular: "Perfume"
+    files:
+      - name: "catalogo"
+        label: "Catálogo de perfumes"
+        file: "content/products.json"
+        fields:
+          - name: "products"
+            label: "Perfumes"
+            widget: "list"
+            label_singular: "Perfume"
+            summary: "{{fields.name}} — RD${{fields.price}}"
+            fields:
+              - { name: "id", label: "ID único (sin espacios, ej: mi-perfume)", widget: "string" }
+              - { name: "name", label: "Nombre del perfume", widget: "string" }
+              - { name: "price", label: "Precio (RD$, solo número)", widget: "number", value_type: "int" }
+              - name: "category"
+                label: "Categoría"
+                widget: "select"
+                options:
+                  - { label: "Árabe", value: "arabe" }
+                  - { label: "Nicho", value: "nicho" }
+                  - { label: "Diseñador", value: "disenador" }
+              - name: "gender"
+                label: "Género"
+                widget: "select"
+                options:
+                  - { label: "Hombre", value: "hombre" }
+                  - { label: "Mujer", value: "mujer" }
+                  - { label: "Unisex", value: "unisex" }
+              - { name: "desc", label: "Descripción corta (una línea)", widget: "string" }
+              - { name: "image", label: "Foto del perfume", widget: "image", required: false, default: "" }
+              - name: "notes"
+                label: "Pirámide olfativa"
+                widget: "object"
+                fields:
+                  - { name: "salida", label: "Notas de salida", widget: "string" }
+                  - { name: "corazon", label: "Notas de corazón", widget: "string" }
+                  - { name: "fondo", label: "Notas de fondo", widget: "string" }
