@@ -111,6 +111,48 @@
         "corazon": "Especias, cuero",
         "fondo": "Ámbar, madera profunda"
       }
+    },
+    {
+      "image": "https://somosofertas.com/wp-content/uploads/IMG_5682-scaled.webp",
+      "id": "hawas-ice ",
+      "name": "hawas ice ",
+      "price": 2800,
+      "category": "arabe",
+      "gender": "hombre",
+      "desc": "fresco,elegante",
+      "notes": {
+        "salida": "limon,manzana congelada, anis estrellado y cardamomo",
+        "corazon": "lavanda,violeta",
+        "fondo": "amaderada almizcle"
+      }
+    },
+    {
+      "image": "https://i5.walmartimages.com/seo/Hawas-Fire-Eau-De-Parfum-Eau-de-perfum-Long-Lasting-Fragrancr-Perfum-For-Men-100-ml_1756b602-1e74-4a13-a1d6-7009bd5951b6.0f6b968e1add250c5e936e9a380603c4.jpeg",
+      "id": "hawas-fire ",
+      "name": "hawas fire ",
+      "price": 3000,
+      "category": "arabe",
+      "gender": "hombre",
+      "notes": {
+        "salida": "limon,manzana y pimienta rosa ",
+        "corazon": "lavanda, ciruela y jazmin",
+        "fondo": "vainilla amabar cedro"
+      },
+      "desc": "intenso, calido y seductor "
+    },
+    {
+      "image": "https://maisonarabia.com.pe/cdn/shop/files/70.jpg?v=1770303198",
+      "id": "Al-haramain-aqua-dubai",
+      "name": "Al Haramain Aqua Dubai",
+      "price": 3500,
+      "category": "arabe",
+      "gender": "hombre",
+      "desc": "fresco, elegante para destacar ",
+      "notes": {
+        "salida": "limon,bergamota",
+        "corazon": "menta,jengibre y grosella negra",
+        "fondo": "ambroxan,cedro,almizcle"
+      }
     }
   ]
 }
