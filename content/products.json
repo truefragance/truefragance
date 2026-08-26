@@ -153,6 +153,20 @@
         "corazon": "menta,jengibre ",
         "fondo": "ambroxan,cedro"
       }
+    },
+    {
+      "image": "https://cdn.valmara.co/61273-large_default/khamrah-waha-de-lattafa-100-ml-edp-unisex.webp",
+      "id": "kamrah-waha",
+      "name": "kamrah waha",
+      "price": 3500,
+      "category": "arabe",
+      "gender": "hombre",
+      "desc": "fresco,dulce ",
+      "notes": {
+        "salida": "piña,limon",
+        "corazon": "coco,flores blanca",
+        "fondo": "almizcle,ambar"
+      }
     }
   ]
 }
