@@ -77,7 +77,7 @@
       "category": "arabe",
       "gender": "unisex",
       "desc": "Cálido y acogedor, aroma envolvente.",
-      "image": "",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMwlV2xq2pe2FUw5pdGDP6Kocbe9KP94n0e52YAwoGCW6gpX_KlM8rit0&s=10",
       "notes": {
         "salida": "Cardamomo, naranja",
         "corazon": "Madera de cedro, ámbar",
@@ -89,9 +89,9 @@
       "name": "Odyssey Mandarin Sky",
       "price": 2800,
       "category": "arabe",
-      "gender": "mujer",
+      "gender": "hombre",
       "desc": "Cítrico y luminoso, fresco todo el día.",
-      "image": "",
+      "image": "https://fragrantvilla.com/cdn/shop/files/Elixir2.png?v=1751043775&width=1445",
       "notes": {
         "salida": "Mandarina, toronja",
         "corazon": "Flor de naranjo, jengibre",
@@ -105,7 +105,7 @@
       "category": "arabe",
       "gender": "hombre",
       "desc": "Potente y con gran proyección, hace notar tu presencia.",
-      "image": "",
+      "image": "https://aremsaprod.vtexassets.com/arquivos/ids/1223740/image-021b32847b9892462243dd6c1713198d0.jpg?v=639075356784370000",
       "notes": {
         "salida": "Bergamota, pimienta",
         "corazon": "Especias, cuero",
@@ -127,7 +127,7 @@
       }
     },
     {
-      "image": "https://i5.walmartimages.com/seo/Hawas-Fire-Eau-De-Parfum-Eau-de-perfum-Long-Lasting-Fragrancr-Perfum-For-Men-100-ml_1756b602-1e74-4a13-a1d6-7009bd5951b6.0f6b968e1add250c5e936e9a380603c4.jpeg",
+      "image": "https://www.emotionbeautysupply.com/cdn/shop/files/PRODUCT_IMAGE_28500_x_500_px_29_28500_x_500_px_29_-_2026-01-22T163953.429.webp?v=1772214907",
       "id": "hawas-fire ",
       "name": "hawas fire ",
       "price": 3000,
@@ -150,8 +150,8 @@
       "desc": "fresco, elegante para destacar ",
       "notes": {
         "salida": "limon,bergamota",
-        "corazon": "menta,jengibre y grosella negra",
-        "fondo": "ambroxan,cedro,almizcle"
+        "corazon": "menta,jengibre ",
+        "fondo": "ambroxan,cedro"
       }
     }
   ]
