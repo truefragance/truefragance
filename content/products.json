@@ -167,6 +167,20 @@
         "corazon": "coco,flores blanca",
         "fondo": "almizcle,ambar"
       }
+    },
+    {
+      "image": "assets/productos/img_1608.jpeg",
+      "id": "Game-of spade-wilcard ",
+      "name": "Game Of Spade Wilcard ",
+      "price": 3800,
+      "category": "arabe",
+      "gender": "unisex",
+      "desc": "Dulce intenso y seductor ",
+      "notes": {
+        "salida": "Piña,fresa,mandarina ",
+        "corazon": "Jazmin,pachuli ",
+        "fondo": "Vainilla,caramelado, ámbar "
+      }
     }
   ]
 }
