@@ -181,6 +181,20 @@
         "corazon": "Jazmin,pachuli ",
         "fondo": "Vainilla,caramelado, ámbar "
       }
+    },
+    {
+      "image": "assets/productos/img_1609.webp",
+      "id": "Game-of- spade-royale ",
+      "name": "Game Of Spade Royale ",
+      "price": 3800,
+      "category": "arabe",
+      "gender": "unisex",
+      "desc": "Elegante y seductor ",
+      "notes": {
+        "salida": "Bergamota, limón ",
+        "corazon": "Jazmin, rosa",
+        "fondo": "Ámbar madera y vainilla "
+      }
     }
   ]
 }
