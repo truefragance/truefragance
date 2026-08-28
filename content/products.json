@@ -209,6 +209,20 @@
         "corazon": "miel y flores blanca ",
         "fondo": "vainilla y almizcle"
       }
+    },
+    {
+      "image": "https://www.emotionbeautysupply.com/cdn/shop/files/yara_elixir.webp?v=1772214321&width=3840",
+      "id": "yara-lataffa",
+      "name": "Yara lataffa",
+      "price": 2490,
+      "category": "arabe",
+      "gender": "mujer",
+      "desc": "dulce suave y femenino",
+      "notes": {
+        "salida": "mandarina y orquidia ",
+        "corazon": " tropicales y acorde gourmand.",
+        "fondo": "ainilla, almizcle y sándalo."
+      }
     }
   ]
 }
