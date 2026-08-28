@@ -195,6 +195,20 @@
         "corazon": "Jazmin, rosa",
         "fondo": "Ámbar madera y vainilla "
       }
+    },
+    {
+      "image": "https://img.nufaar.com/lattafa-eclaire-1-main.webp",
+      "id": "eclaire-lataffa",
+      "name": "Eclaire Lataffa",
+      "price": 2490,
+      "category": "arabe",
+      "gender": "mujer",
+      "desc": "dulce y cremoso ",
+      "notes": {
+        "salida": "caramelo, leche, azucar ",
+        "corazon": "miel y flores blanca ",
+        "fondo": "vainilla y almizcle"
+      }
     }
   ]
 }
