@@ -42,6 +42,7 @@ collections:
                   - { label: "Mujer", value: "mujer" }
                   - { label: "Unisex", value: "unisex" }
               - { name: "desc", label: "Descripción corta (una línea)", widget: "string" }
+              - { name: "soldout", label: "¿AGOTADO? (actívalo cuando no tengas stock)", widget: "boolean", default: false, required: false }
               - { name: "image", label: "Foto del perfume", widget: "image", required: false, default: "" }
               - name: "notes"
                 label: "Pirámide olfativa"
