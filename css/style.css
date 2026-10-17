@@ -602,6 +602,38 @@ section{ padding: 5.5rem 1.5rem; }
 .wa-float:hover{ transform: scale(1.06); }
 
 /* =========================================================
+   Disponible / Agotado
+   ========================================================= */
+.product-photo{ position: relative; }
+.stock-badge{
+  position: absolute; top: .7rem; left: .7rem; z-index: 2;
+  background: #161616; color: #fff;
+  font-family: var(--font-mono);
+  font-size: .66rem; font-weight: 600; letter-spacing: .12em;
+  padding: .35rem .6rem; border-radius: 2px;
+}
+.stock-status{
+  display: flex; align-items: center; gap: .4rem;
+  font-family: var(--font-mono);
+  font-size: .7rem; letter-spacing: .04em;
+  margin: .1rem 0 0;
+}
+.stock-status::before{
+  content: ""; width: 7px; height: 7px; border-radius: 50%;
+  background: currentColor; flex-shrink: 0;
+}
+.stock-status.in{ color: #2E7D4F; }
+.stock-status.out{ color: var(--rose); }
+.product-card.soldout .product-photo img{ filter: grayscale(1); opacity: .5; }
+.product-card.soldout .product-name,
+.product-card.soldout .product-price{ opacity: .6; }
+.add-btn:disabled,
+.add-btn:disabled:hover{
+  background: transparent; color: var(--ink-muted);
+  border-color: var(--line-strong); cursor: not-allowed;
+}
+
+/* =========================================================
    Responsive — móvil y tablet (deben ir AL FINAL para pisar
    correctamente las reglas base de arriba)
    ========================================================= */
@@ -670,4 +702,9 @@ section{ padding: 5.5rem 1.5rem; }
   .cart-drawer{ width: 100vw; }
   .wa-float{ width: 48px; height: 48px; bottom: 1rem; left: 1rem; }
   .wa-float svg{ width: 22px; height: 22px; }
+}
+
+@media (max-width: 640px){
+  .stock-badge{ top: .45rem; left: .45rem; font-size: .54rem; padding: .25rem .42rem; }
+  .stock-status{ font-size: .62rem; }
 }
