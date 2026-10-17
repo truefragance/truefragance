@@ -23,6 +23,8 @@
   }
 
   function addToCart(id) {
+    const prod = PRODUCTS.find((x) => x.id === id);
+    if (!prod || prod.soldout) return;
     cart[id] = (cart[id] || 0) + 1;
     saveCart();
   }
@@ -119,15 +121,17 @@
     }
 
     grid.innerHTML = list.map((p) => `
-      <article class="product-card" data-id="${p.id}">
+      <article class="product-card${p.soldout ? " soldout" : ""}" data-id="${p.id}">
         <div class="product-photo">
           ${p.image ? `<img src="${p.image}" alt="${p.name}">` : `<span>${p.name}</span>`}
+          ${p.soldout ? `<span class="stock-badge">AGOTADO</span>` : ""}
         </div>
         <div class="product-body">
           <span class="product-cat">${CATEGORIES[p.category] || ""} · ${GENDERS[p.gender] || ""}</span>
           <h3 class="product-name">${p.name}</h3>
           <p class="product-desc">${p.desc}</p>
           <p class="product-price">${money(p.price)}</p>
+          <p class="stock-status ${p.soldout ? "out" : "in"}">${p.soldout ? "Agotado" : "Disponible"}</p>
           <button class="pyramid-toggle" type="button" aria-expanded="false">Ver pirámide olfativa</button>
           <div class="pyramid">
             <div class="pyramid-row"><b>Salida</b><span>${p.notes.salida}</span></div>
@@ -135,7 +139,9 @@
             <div class="pyramid-row"><b>Fondo</b><span>${p.notes.fondo}</span></div>
           </div>
           <div class="product-footer">
-            <button class="add-btn" type="button" data-add="${p.id}">Agregar</button>
+            ${p.soldout
+              ? `<button class="add-btn" type="button" disabled>Agotado</button>`
+              : `<button class="add-btn" type="button" data-add="${p.id}">Agregar</button>`}
           </div>
         </div>
       </article>
@@ -318,6 +324,15 @@
     .then((res) => res.json())
     .then((data) => {
       PRODUCTS = data.products || [];
+
+      // Quita del carrito perfumes agotados o que ya no existen en el catálogo
+      const before = Object.keys(cart).length;
+      Object.keys(cart).forEach((id) => {
+        const prod = PRODUCTS.find((x) => x.id === id);
+        if (!prod || prod.soldout) delete cart[id];
+      });
+      if (Object.keys(cart).length !== before) saveCart();
+
       renderCategoryFilter();
       renderGenderFilter();
       renderProducts();
