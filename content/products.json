@@ -1,46 +1,49 @@
 {
   "products": [
     {
-      "id": "9pm-rebel",
-      "name": "9PM Rebel",
-      "price": 3000,
-      "category": "arabe",
-      "gender": "hombre",
-      "desc": "Envolvente y misterioso, hecho para la noche.",
-      "image": "assets/productos/9pm-rebel.jpg",
       "notes": {
         "salida": "Pimienta negra, bergamota",
         "corazon": "Cuero, especias oscuras",
         "fondo": "Ámbar, madera ahumada"
-      }
+      },
+      "gender": "hombre",
+      "price": 3000,
+      "name": "9PM Rebel",
+      "desc": "Envolvente y misterioso, hecho para la noche.",
+      "soldout": true,
+      "id": "9pm-rebel",
+      "image": "assets/productos/9pm-rebel.jpg",
+      "category": "arabe"
     },
     {
-      "id": "9pm-elixir",
-      "name": "9PM Elixir",
-      "price": 2800,
-      "category": "arabe",
-      "gender": "unisex",
-      "desc": "Intenso y concentrado, larga duración.",
-      "image": "assets/productos/9pm-elixir.jpg",
       "notes": {
         "salida": "Canela, cardamomo",
         "corazon": "Rosa oscura, incienso",
         "fondo": "Ámbar, almizcle"
-      }
+      },
+      "gender": "unisex",
+      "price": 2800,
+      "name": "9PM Elixir",
+      "desc": "Intenso y concentrado, larga duración.",
+      "soldout": true,
+      "id": "9pm-elixir",
+      "image": "assets/productos/9pm-elixir.jpg",
+      "category": "arabe"
     },
     {
-      "id": "9pm-pour-famme",
-      "name": "9PM Pour Famme",
-      "price": 2500,
-      "category": "arabe",
-      "gender": "mujer",
-      "desc": "Femenino y elegante, ideal para la noche.",
-      "image": "assets/productos/9pm-pour-famme.jpg",
       "notes": {
         "salida": "Frambuesa, bergamota",
         "corazon": "Jazmín, iris",
         "fondo": "Vainilla, almizcle"
-      }
+      },
+      "gender": "mujer",
+      "price": 2500,
+      "name": "9PM Pour Famme",
+      "desc": "Femenino y elegante, ideal para la noche.",
+      "soldout": true,
+      "id": "9pm-pour-famme",
+      "image": "assets/productos/9pm-pour-famme.jpg",
+      "category": "arabe"
     },
     {
       "id": "9am-pour-famme",
