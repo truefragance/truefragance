@@ -10,7 +10,7 @@
       "price": 3000,
       "name": "9PM Rebel",
       "desc": "Envolvente y misterioso, hecho para la noche.",
-      "soldout": true,
+      "soldout": false,
       "id": "9pm-rebel",
       "image": "assets/productos/9pm-rebel.jpg",
       "category": "arabe"
@@ -25,7 +25,7 @@
       "price": 2800,
       "name": "9PM Elixir",
       "desc": "Intenso y concentrado, larga duración.",
-      "soldout": true,
+      "soldout": false,
       "id": "9pm-elixir",
       "image": "assets/productos/9pm-elixir.jpg",
       "category": "arabe"
@@ -40,7 +40,7 @@
       "price": 2500,
       "name": "9PM Pour Famme",
       "desc": "Femenino y elegante, ideal para la noche.",
-      "soldout": true,
+      "soldout": false,
       "id": "9pm-pour-famme",
       "image": "assets/productos/9pm-pour-famme.jpg",
       "category": "arabe"
@@ -60,18 +60,19 @@
       }
     },
     {
-      "id": "9pm-night-out",
-      "name": "9PM Night Out",
-      "price": 3500,
-      "category": "arabe",
-      "gender": "hombre",
-      "desc": "Audaz e intenso, para destacar de noche.",
-      "image": "assets/productos/9pm-night-out.jpg",
       "notes": {
         "salida": "Pimienta rosa, ron",
         "corazon": "Cuero, tabaco",
         "fondo": "Vainilla, madera de oud"
-      }
+      },
+      "gender": "hombre",
+      "price": 3500,
+      "name": "9PM Night Out",
+      "desc": "Audaz e intenso, para destacar de noche.",
+      "soldout": true,
+      "id": "9pm-night-out",
+      "image": "assets/productos/9pm-night-out.jpg",
+      "category": "arabe"
     },
     {
       "id": "odyssey-home",
@@ -102,18 +103,19 @@
       }
     },
     {
-      "id": "odyssey-mega",
-      "name": "Odyssey Mega",
-      "price": 3000,
-      "category": "arabe",
-      "gender": "hombre",
-      "desc": "Potente y con gran proyección, hace notar tu presencia.",
-      "image": "https://aremsaprod.vtexassets.com/arquivos/ids/1223740/image-021b32847b9892462243dd6c1713198d0.jpg?v=639075356784370000",
       "notes": {
         "salida": "Bergamota, pimienta",
         "corazon": "Especias, cuero",
         "fondo": "Ámbar, madera profunda"
-      }
+      },
+      "gender": "hombre",
+      "price": 3000,
+      "name": "Odyssey Mega",
+      "desc": "Potente y con gran proyección, hace notar tu presencia.",
+      "soldout": true,
+      "id": "odyssey-mega",
+      "image": "https://aremsaprod.vtexassets.com/arquivos/ids/1223740/image-021b32847b9892462243dd6c1713198d0.jpg?v=639075356784370000",
+      "category": "arabe"
     },
     {
       "image": "https://somosofertas.com/wp-content/uploads/IMG_5682-scaled.webp",
